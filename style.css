@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+nav{
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 65px;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+nav img{
+    width: 44px;
+    padding: 0px 8px;
+}
+nav .brand{
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    height: 60vh;
+    display: flex;
+    color: white;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 13px;
+    padding: 14px;
+    background: url('./bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.songItem{
+    height: 40px;
+    background-color: white;
+    color: black;
+    margin: 7px 0px;
+    padding: 0px 23px;
+    border-radius: 34px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:left;
+}
+.songItem img{
+    width: 33px;
+    border-radius: 50%;
+}
+.time i{
+    cursor: pointer;
+    margin: 0px 3px;
+}
+.bottom{
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.icons{
+    margin: 10px 0px 0px 0px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.bottom input{
+    width: 80vw;
+}
+
+.playingimage {
+    position: absolute;
+    left: 10vw;
+}
+.gift{
+    transition: 0.4s;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        height: auto;
+    }
+    #songtitle{
+        display: none;
+    }
+    #progressbar{
+        width: 60vw;
+    }
+    #timer1 , #timer2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width : 900px) {
+    .bottom{
+        height: 150px;
+    }
+    .icons{
+        margin: 50px 0px 0px 0px;
+    }#timer1 , #timer2{
+        top: 40px;
+        font-size: 14px;
+    }
+}
